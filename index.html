@@ -12,7 +12,7 @@
         <div id="app" class="container">
             <h1 class="title">Lista di email dall'API</h1>
             <ol class="email-list">
-                <li class="email" v-for="email in emails">{{email}}</li>
+                <li class="email" v-for="email in emails" v-if="emails.length == 10">{{email}}</li>
             </ol>
         </div>
 
