@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue email list</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vue email list</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
 
-    <div id="app">
-        
-    </div>
-
-
-
-
-
-
+        <div id="app" class="container">
+            <h1 class="title">Lista di email dall'API</h1>
+            <ol class="email-list">
+                <li class="email" v-for="email in emails">{{email}}</li>
+            </ol>
+        </div>
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</body>
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
 </html>

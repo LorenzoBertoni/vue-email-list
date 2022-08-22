@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.email-list {
+    text-align: center;
+    list-style: none;
+}
+
+.email {
+    margin: .8rem 0;
+    font-size: 1.3rem;
+}
